@@ -1,0 +1,48 @@
+@import './_variable';
+.head{
+  background: $purple;
+  
+
+  &__title{
+    padding: 2rem 0;
+    color: $white-light;
+    font-size: 5rem;
+    font-family: cursive, sans-serif;
+  }
+
+  &__task #form{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+  }
+     .head__task-input{
+      font-size: 1.8rem;
+      padding-left: 1rem;
+      border: none;
+      width: 70%;
+      outline: none;
+      border-radius: .5rem;
+
+     
+      
+    }
+    .head__task-button{
+      font-size: 1.8rem;
+      border: none;
+      border-radius: .5rem;
+      text-transform: capitalize;
+      letter-spacing: 1px;
+       color: $white-light;
+      padding: .8rem 2rem;
+      background: $green-dark;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover{
+       transform: translateY(3px);
+       color: $white;
+      }
+    }
+
+  
+}

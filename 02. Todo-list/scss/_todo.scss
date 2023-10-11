@@ -1,0 +1,62 @@
+@import './_variable';
+.todo{
+  padding: 2rem 0;
+
+  &__item{
+    font-size: 2rem;
+    background: $white-light;
+    color: $black;
+    display: flex;
+    justify-content: space-between;
+    border-radius: .5rem;
+    padding: .5rem;
+    margin-bottom: 1rem;
+
+
+    &-tick{
+      width: 2rem;
+      height: 2rem;
+      display: inline-block;
+      margin-left: .5rem;
+      border-radius: 50%;
+      border: 2px solid $black;
+      position: relative;
+      top: 3px;
+      cursor: pointer;
+
+      &::before{
+        content: "✓";
+        position: absolute;
+        top: -18px;
+        font-size: 3rem;
+        display: none;
+      }
+      .done &::before{
+        display: inline;
+      }
+    }
+
+    &-text{
+      margin-left: .5rem;
+    }
+
+    .line-through &-text{
+  text-decoration: line-through;
+  }
+
+
+    &-delete{
+      border: none;
+      color: $black;
+      opacity: .5;
+      cursor: pointer;
+      transition: .2s ease-in-out;
+
+      &:hover{
+        opacity: 1;
+      }
+
+
+    }
+  }
+}

@@ -1,0 +1,20 @@
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+
+@media (max-width: map-get($breakpoints, 'md')){
+  .container{
+    width: 75% !important;
+  }
+}
+
+@media (max-width: map-get($breakpoints, 'sm')){
+  .container{
+    width: 85% !important;
+  }
+}

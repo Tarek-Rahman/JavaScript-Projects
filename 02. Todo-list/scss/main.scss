@@ -1,0 +1,27 @@
+@import './reset';
+@import './header';
+@import './todo';
+@import './responsive';
+
+
+
+.container{
+  width: 60%;
+  margin: auto;
+
+}
+
+main{
+  background: $white ;
+  min-height: 70vh;
+}
+
+.hide{
+  display: none;
+}
+
+.done{
+  display: inline-block;
+  opacity: 0.5;
+  transition: 0.3s ease-in-out;
+}
